@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Washington Kamau</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        header {
+            background: #0056b3;
+            color: #000000;
+            padding: 30px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 200%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(-50%);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2em;
+            font-weight: 400;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-info, .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p, .social-media a {
+            margin: 5px;
+        }
+
+        .contact-info a, .social-media a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        .social-media a {
+            font-size: 1.5em;
+            transition: color 0.3s;  
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .social-media a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            height: 2px;
+            width: 100%;
+            background-color: #003d7a;
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 0.3s ease;
+        }
+
+        .social-media a:hover::after {
+            color: #003d7a;
+            transform: scaleX(1);
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .document-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .document-list a {
+            display: flex;
+            align-items: center;
+            width: calc(33% - 20px);
+            padding: 15px;
+            background: #e4f1e8;
+            color: #0056b3;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s, box-shadow 0.3s;
+            text-align: left;
+        }
+
+        .document-list a:hover {
+            background: #cde8d7;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .document-list i {
+            margin-right: 10px;
+            font-size: 1.5em;
+        }
+
+        footer {
+            background: #0056b3;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .document-list a {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .document-list a {
+                width: 100%;
+            }
+
+            .contact-info, .social-media {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+    </head>
+    
+    <body>
+        <header>
+            <div class="container">
+                <h1>David Washington Kamau</h1>
+                <p>Web Developer & Information Scientist</p>
+            </div>
+        </header>
+    
+        <div class="container">
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a
+                        href="mailto:david.washington.kamau@gmail.com">david.washington.kamau@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+254741425185">(+254) 741425185</a></p>
+                <p><strong>Address:</strong> 72855-00200, Nairobi, Kenya</p>
+            </div>
+    
+            <div class="social-media">
+                <a href="https://twitter.com/yourprofile" target="_blank" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/yourprofile" target="_blank" title="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" title="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/yourprofile" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+    
+            <section id="summary">
+                <h2>Professional Summary</h2>
+                <p>I am a seasoned web developer and information scientist with experience in managing information
+                    systems, web development, and project management. My career began with a Bachelor of Information Science
+                    from the
+                    Technical University of Mombasa, where I developed a solid foundation in web technologies, database
+                    management, and
+                    information organization.<br><br>
+    
+                    Throughout my career, I have honed my skills in HTML, CSS, JavaScript, and PHP, and am proficient in
+                    using MySQL for
+                    database management. I have a proven track record of creating and maintaining responsive web
+                    applications and designing
+                    effective information systems. My recent projects include developing web applications projected to
+                    improve operational
+                    efficiency by 20% and enhance user experience with a 15% increase in user retention. I am adept at
+                    identifying and
+                    implementing solutions that streamline processes and reduce development time.<br><br>
+    
+                    Passionate about integrating best practices in web development and information management, I am
+                    dedicated to delivering
+                    impactful results and optimizing both digital and physical information environments.</p>
+            </section>
+
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Web Development:</strong> HTML, CSS, JavaScript, PHP</li>
+                <li><strong>Responsive Web Design:</strong> Bootstrap</li>
+                <li><strong>Database Management:</strong> SQL, MySQL</li>
+                <li><strong>Project Management</strong></li>
+                <li><strong>Information Organization and Retrieval</strong></li>
+                <li><strong>Cataloging and Classification</strong></li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <ul>
+                <li>
+                    <strong>Industrial Attachment Intern</strong> (State Department for Tourism, ICT Department) <br>
+                    <em>08/2023 – 12/2023</em><br>
+                    Developed an internal attachment portal that improved communication and efficiency by 25% and
+                    reduced task assignment time by 30%.
+                </li>
+                <li>
+                    <strong>Freelance Web Developer</strong> <br>
+                    <em>01/2021 – Present</em><br>
+                    Designing a dynamic website for a local business to increase online presence and customer engagement
+                    by 20%.
+                </li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>Bachelor of Information Science</strong> <br>
+                    <em>09/2020 – 09/2024</em><br>
+                    Technical University of Mombasa – Mombasa, Kenya
+                </li>
+                <li>
+                    <strong>High School Certificate</strong> <br>
+                    <em>01/2015 – 11/2019</em><br>
+                    Kiaguthu Boys School – Murang’a, Kenya <br>
+                    Attained: B- (minus)
+                </li>
+            </ul>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>AI Augmented Professional Development Skills in the Digital Age</li>
+                <li>ABSA Work Skills</li>
+                <li>Computer Literacy</li>
+            </ul>
+        </section>
+
+        <section id="languages">
+            <h2>Languages</h2>
+            <ul>
+                <li>English (Fluent)</li>
+                <li>Swahili (Fluent)</li>
+            </ul>
+        </section>
+
+        <section id="technical-skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Web Development:</strong> HTML, CSS, JavaScript, PHP</li>
+                <li><strong>Database Management:</strong> SQL, MySQL</li>
+                <li><strong>Tools:</strong> Bootstrap, Git, Adobe Photoshop</li>
+            </ul>
+        </section>
+
+        <section id="references">
+            <h2>References</h2>
+            <ul>
+                <li>
+                    <strong>Brian Omesa</strong> <br>
+                    ICT officer, State Department for Tourism <br>
+                    <a href="tel:0711500138">0711500138</a>
+                </li>
+                <li>
+                    <strong>Samwel Ondari</strong> <br>
+                    Business Person <br>
+                    <a href="tel:0796608457">0796608457</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="documents">
+            <h2>Documents & Links</h2>
+            <div class="document-list">
+                <a href="link-to-highschool-certificate.pdf" target="_blank"><i class="fas fa-graduation-cap"></i> High
+                    School Certificate</a>
+                <a href="link-to-bachelor-degree.pdf" target="_blank"><i class="fas fa-graduation-cap"></i> Bachelor's
+                    Degree Certificate</a>
+                <a href="link-to-certificate-1.pdf" target="_blank"><i class="fas fa-certificate"></i> AI Augmented
+                    Professional Development Skills</a>
+                <a href="link-to-certificate-2.pdf" target="_blank"><i class="fas fa-certificate"></i> ABSA Work
+                    Skills</a>
+                <a href="link-to-recommendation-letter.pdf" target="_blank"><i class="fas fa-file-alt"></i>
+                    Recommendation Letter</a>
+                <a href="https://ecotrailstours.com" target="_blank"><i class="fas fa-link"></i> Website 1</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 David Washington Kamau</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/d9dd6b60aa.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
